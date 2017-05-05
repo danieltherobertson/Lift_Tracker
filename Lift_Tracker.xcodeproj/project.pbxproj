@@ -14,6 +14,8 @@
 		65525A1C1EBD170C00F0EBFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65525A1A1EBD170C00F0EBFB /* LaunchScreen.storyboard */; };
 		65525A271EBD170C00F0EBFB /* Lift_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65525A261EBD170C00F0EBFB /* Lift_TrackerTests.swift */; };
 		65525A321EBD170C00F0EBFB /* Lift_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65525A311EBD170C00F0EBFB /* Lift_TrackerUITests.swift */; };
+		655D9EF11EBD452B002C6502 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655D9EF01EBD452B002C6502 /* Exercise.swift */; };
+		655D9EF31EBD454B002C6502 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655D9EF21EBD454B002C6502 /* Workout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		65525A2D1EBD170C00F0EBFB /* Lift_TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lift_TrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65525A311EBD170C00F0EBFB /* Lift_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lift_TrackerUITests.swift; sourceTree = "<group>"; };
 		65525A331EBD170C00F0EBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		655D9EF01EBD452B002C6502 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		655D9EF21EBD454B002C6502 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				65525A181EBD170C00F0EBFB /* Assets.xcassets */,
 				65525A1A1EBD170C00F0EBFB /* LaunchScreen.storyboard */,
 				65525A1D1EBD170C00F0EBFB /* Info.plist */,
+				655D9EF01EBD452B002C6502 /* Exercise.swift */,
+				655D9EF21EBD454B002C6502 /* Workout.swift */,
 			);
 			path = Lift_Tracker;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					65525A0D1EBD170C00F0EBFB = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = T2PU79XAUR;
 						ProvisioningStyle = Automatic;
 					};
 					65525A211EBD170C00F0EBFB = {
@@ -261,6 +268,8 @@
 			files = (
 				65525A141EBD170C00F0EBFB /* ViewController.swift in Sources */,
 				65525A121EBD170C00F0EBFB /* AppDelegate.swift in Sources */,
+				655D9EF11EBD452B002C6502 /* Exercise.swift in Sources */,
+				655D9EF31EBD454B002C6502 /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T2PU79XAUR;
 				INFOPLIST_FILE = Lift_Tracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Daniel-Robertson-Productions.Lift-Tracker";
@@ -424,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T2PU79XAUR;
 				INFOPLIST_FILE = Lift_Tracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Daniel-Robertson-Productions.Lift-Tracker";
@@ -505,6 +516,7 @@
 				65525A381EBD170C00F0EBFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65525A391EBD170C00F0EBFB /* Build configuration list for PBXNativeTarget "Lift_TrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +525,7 @@
 				65525A3B1EBD170C00F0EBFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65525A3C1EBD170C00F0EBFB /* Build configuration list for PBXNativeTarget "Lift_TrackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +534,7 @@
 				65525A3E1EBD170C00F0EBFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
