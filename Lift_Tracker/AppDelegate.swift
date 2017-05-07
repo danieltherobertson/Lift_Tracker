@@ -15,7 +15,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let defaults = UserDefaults.standard
+        
+        if defaults.bool(forKey: "HasLaunchedOnce") {
+            print("welcome back")
+            //already launched
+        } else {
+            defaults.set(true, forKey: "HasLaunchedOnce")
+            defaults.synchronize()
+            print("hello, first timer")
+            
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "milk")
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+        }
+            
+        
+    
+        
+        
         return true
     }
 

@@ -9,7 +9,7 @@
 import Foundation
 
 struct  Routine {
-    var name: String!
-    var exercises: [Exercise]!
+    var name: String
+    var exercises: [Exercise]
     var performancesPerWeek: Int
 }
