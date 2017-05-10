@@ -11,7 +11,7 @@ import Foundation
 struct Exercise {
     var name: String
     var sets: Int
-    var reps: Int
+    var reps: [Int]
     var restTime: Int
     var weight: Double
     var targetWeight: Double
