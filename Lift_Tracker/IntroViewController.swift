@@ -15,6 +15,7 @@ class IntroViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var getStartedText: UILabel!
     @IBOutlet weak var nameInputField: UITextField!
     @IBOutlet weak var contentContainerYSpacing: NSLayoutConstraint!
+    var userName = String()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,6 +34,10 @@ class IntroViewController: UIViewController, UITextFieldDelegate {
     // Hide the keyboard when the return key pressed
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        if let name = textField.text {
+            userName = name
+        }
+        performSegue(withIdentifier: "Welcome_MenuSegue", sender: self)
         return true
     }
     
@@ -58,14 +63,17 @@ class IntroViewController: UIViewController, UITextFieldDelegate {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+//         Get the new view controller using segue.destinationViewController.
+//         Pass the selected object to the new view controller.
+        
+        let vc = segue.destination as! MainMenuViewController
+        vc.userName = userName
     }
-    */
+ 
 
 }

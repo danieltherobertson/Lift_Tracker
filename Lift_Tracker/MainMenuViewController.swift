@@ -11,7 +11,9 @@ import UIKit
 class MainMenuViewController: UIViewController {
     
     @IBOutlet var menuButtons: [UIButton]!
+    @IBOutlet weak var menuGreeting: UILabel!
     
+    var userName = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,10 @@ class MainMenuViewController: UIViewController {
 //            button.layer.borderWidth = 5
 //            button.layer.borderColor = UIColor(red: 35/255, green: 198/255, blue: 255/255, alpha: 1.0).cgColor
         }
+        
+        print(userName)
+        menuGreeting.text = "Welcome, \(userName)"
+        
         // Do any additional setup after loading the view.
     }
 
