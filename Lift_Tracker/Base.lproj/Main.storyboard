@@ -43,12 +43,16 @@
                                                             </label>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.98823529409999999" green="0.21176470589999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="xFD-b5-5Om" secondAttribute="height" multiplier="1:1" id="Dhu-Va-uiF"/>
                                                             <constraint firstItem="5ku-4t-a6e" firstAttribute="centerY" secondItem="xFD-b5-5Om" secondAttribute="centerY" id="GsJ-mJ-2XW"/>
                                                             <constraint firstItem="5ku-4t-a6e" firstAttribute="width" secondItem="xFD-b5-5Om" secondAttribute="width" id="hRm-dG-R9E"/>
                                                             <constraint firstItem="5ku-4t-a6e" firstAttribute="centerX" secondItem="xFD-b5-5Om" secondAttribute="centerX" id="u4f-la-HmA"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="QHe-FZ-lt3" appends="YES" id="Rps-oV-hYh"/>
+                                                        </connections>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -63,12 +67,16 @@
                                                             </label>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.98823529409999999" green="0.21176470589999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstItem="m65-Dg-b9E" firstAttribute="centerX" secondItem="GgE-Dr-MQg" secondAttribute="centerX" id="5Ny-fV-seZ"/>
                                                             <constraint firstAttribute="width" secondItem="GgE-Dr-MQg" secondAttribute="height" multiplier="1:1" id="HEb-9H-nRL"/>
                                                             <constraint firstItem="m65-Dg-b9E" firstAttribute="centerY" secondItem="GgE-Dr-MQg" secondAttribute="centerY" id="r5X-GT-tfh"/>
                                                             <constraint firstItem="m65-Dg-b9E" firstAttribute="width" secondItem="GgE-Dr-MQg" secondAttribute="width" id="yfI-s3-axT"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="YUA-Is-xcD" appends="YES" id="aFy-xq-0Le"/>
+                                                        </connections>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -91,12 +99,16 @@
                                                             </label>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.98823529409999999" green="0.21176470589999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstItem="6cE-5m-Zyg" firstAttribute="width" secondItem="GWg-Ho-D5R" secondAttribute="width" id="cWc-Ib-xW6"/>
                                                             <constraint firstItem="6cE-5m-Zyg" firstAttribute="centerY" secondItem="GWg-Ho-D5R" secondAttribute="centerY" id="nKM-yd-BUM"/>
                                                             <constraint firstAttribute="width" secondItem="GWg-Ho-D5R" secondAttribute="height" multiplier="1:1" id="r6r-NW-aN3"/>
                                                             <constraint firstItem="6cE-5m-Zyg" firstAttribute="centerX" secondItem="GWg-Ho-D5R" secondAttribute="centerX" id="xLA-DQ-pXp"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="GNt-oq-cbN" appends="YES" id="M0z-gE-EGl"/>
+                                                        </connections>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -111,12 +123,16 @@
                                                             </label>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.98823529409999999" green="0.21176470589999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstItem="b6m-h1-fLD" firstAttribute="centerY" secondItem="rbh-fJ-faP" secondAttribute="centerY" id="m2h-zL-Nea"/>
                                                             <constraint firstItem="b6m-h1-fLD" firstAttribute="width" secondItem="rbh-fJ-faP" secondAttribute="width" id="qEe-wD-JcB"/>
                                                             <constraint firstItem="b6m-h1-fLD" firstAttribute="centerX" secondItem="rbh-fJ-faP" secondAttribute="centerX" id="r6k-D6-JHp"/>
                                                             <constraint firstAttribute="width" secondItem="rbh-fJ-faP" secondAttribute="height" multiplier="1:1" id="zwr-gN-r7H"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="avy-4s-Lap" appends="YES" id="Xde-Qy-BdX"/>
+                                                        </connections>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -125,11 +141,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPad Landscape" translatesAutoresizingMaskIntoConstraints="NO" id="pyH-1l-dln">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="159" id="Kaw-vl-wBO"/>
-                                </constraints>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPad Landscape" translatesAutoresizingMaskIntoConstraints="NO" id="pyH-1l-dln"/>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="Luz-AM-077">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0W-ff-z90">
@@ -181,6 +193,7 @@
                         <constraints>
                             <constraint firstItem="UUb-wZ-OoM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="0jb-vq-EPf"/>
                             <constraint firstAttribute="trailing" secondItem="SOq-yW-c8i" secondAttribute="trailing" constant="20" id="5nu-lj-RuH"/>
+                            <constraint firstItem="pyH-1l-dln" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="7oH-Qr-IeP"/>
                             <constraint firstItem="Luz-AM-077" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="centerYWithinMargins" constant="25" id="9ak-2r-vdh"/>
                             <constraint firstItem="pyH-1l-dln" firstAttribute="trailing" secondItem="SOq-yW-c8i" secondAttribute="trailing" id="Dum-PL-lm7"/>
                             <constraint firstItem="Luz-AM-077" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="EHP-kI-udP"/>
@@ -214,13 +227,33 @@
                     <navigationItem key="navigationItem" id="Q21-Pb-Bax"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="menuGreeting" destination="3O5-kK-i0o" id="m5Q-bK-FXp"/>
-                        <outletCollection property="menuButtons" destination="D0W-ff-z90" collectionClass="NSMutableArray" id="Bxi-mk-nmj"/>
-                        <outletCollection property="menuButtons" destination="njT-ip-WsS" collectionClass="NSMutableArray" id="F2K-JR-osJ"/>
-                        <outletCollection property="menuButtons" destination="bzd-ru-2sd" collectionClass="NSMutableArray" id="M9Z-bK-Ah3"/>
+                        <outlet property="myWorkoutsButton" destination="GgE-Dr-MQg" id="mW2-di-lwy"/>
+                        <outlet property="performanceButton" destination="GWg-Ho-D5R" id="vh6-1X-ow4"/>
+                        <outlet property="settingsButton" destination="rbh-fJ-faP" id="K6F-BP-LWS"/>
+                        <outlet property="workoutModeButton" destination="xFD-b5-5Om" id="zAg-6D-2LE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QHe-FZ-lt3">
+                    <connections>
+                        <action selector="mainMenuButtonPressed:" destination="BYZ-38-t0r" id="knm-Td-d7u"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="GNt-oq-cbN">
+                    <connections>
+                        <action selector="mainMenuButtonPressed:" destination="BYZ-38-t0r" id="Y7P-6T-9ff"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="YUA-Is-xcD">
+                    <connections>
+                        <action selector="mainMenuButtonPressed:" destination="BYZ-38-t0r" id="Ewh-Py-E9r"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="avy-4s-Lap">
+                    <connections>
+                        <action selector="mainMenuButtonPressed:" destination="BYZ-38-t0r" id="v4f-NN-grX"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="868" y="135.38230884557723"/>
         </scene>
@@ -237,7 +270,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ldf-lb-Izv">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.13129491421018069" green="0.77913001330543863" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JYA-nU-gmW">
                                     <size key="itemSize" width="231" height="88"/>
@@ -253,6 +286,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="231" height="88"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
+                                        <color key="backgroundColor" red="0.98823529409999999" green="0.21176470589999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -308,7 +342,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="0.9882352941176471" green="0.21568627450980393" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOl-XU-sjy" userLabel="First Responder" sceneMemberID="firstResponder"/>

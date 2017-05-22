@@ -10,24 +10,25 @@ import UIKit
 
 class MainMenuViewController: UIViewController {
     
-    @IBOutlet var menuButtons: [UIButton]!
-    @IBOutlet weak var menuGreeting: UILabel!
+    @IBOutlet weak var workoutModeButton: UIView!
+    @IBOutlet weak var performanceButton: UIView!
+    @IBOutlet weak var myWorkoutsButton: UIView!
+    @IBOutlet weak var settingsButton: UIView!
     
     var userName = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
-        for button in menuButtons {
-            button.layer.cornerRadius = 30
-//            button.layer.borderWidth = 5
-//            button.layer.borderColor = UIColor(red: 35/255, green: 198/255, blue: 255/255, alpha: 1.0).cgColor
-        }
         
         print(userName)
-        menuGreeting.text = "Welcome, \(userName)"
-        
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func mainMenuButtonPressed(_ sender: UITapGestureRecognizer) {
+        let button = sender.view
+        print(button)
+        button?.backgroundColor = UIColor.black
     }
 
     override func didReceiveMemoryWarning() {
