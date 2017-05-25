@@ -38,3 +38,31 @@ class MyWorkoutsViewController: UIViewController {
     */
 
 }
+
+extension MyWorkoutsViewController: UICollectionViewDataSource {
+
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "workoutCell", for: indexPath)
+        
+        return cell
+    }
+
+
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return 0
+    }
+}
+
+extension MyWorkoutsViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CGSize(width: 4, height: 4)
+    }
+}
+
+extension MyWorkoutsViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+    }
+}
