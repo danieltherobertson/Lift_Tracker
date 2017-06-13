@@ -12,7 +12,7 @@ class MyWorkoutsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let addWorkoutbutton = UIBarButtonItem.init(title: "Add Workout", style: .plain, target: self, action: #selector(addWorkout))
+        let addWorkoutbutton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addWorkout))
         self.navigationItem.rightBarButtonItem = addWorkoutbutton
         // Do any additional setup after loading the view.
     }

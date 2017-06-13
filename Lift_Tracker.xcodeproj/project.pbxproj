@@ -15,10 +15,18 @@
 		65525A321EBD170C00F0EBFB /* Lift_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65525A311EBD170C00F0EBFB /* Lift_TrackerUITests.swift */; };
 		655D9EF11EBD452B002C6502 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655D9EF01EBD452B002C6502 /* Exercise.swift */; };
 		655D9EF31EBD454B002C6502 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655D9EF21EBD454B002C6502 /* Workout.swift */; };
+		6585810A1EE0D81800F40319 /* AddWorkoutCellDescriptor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 658581091EE0D81800F40319 /* AddWorkoutCellDescriptor.plist */; };
+		658AAE711EE7736A00F20FCD /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658AAE701EE7736A00F20FCD /* CustomCell.swift */; };
 		65E5DEF21EC6435C00228455 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E5DEF11EC6435C00228455 /* MainMenuViewController.swift */; };
 		65E5DEF41EC6492000228455 /* MyWorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E5DEF31EC6492000228455 /* MyWorkoutsViewController.swift */; };
 		65E5DEF61EC64BB200228455 /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E5DEF51EC64BB200228455 /* AddWorkoutViewController.swift */; };
 		65EEED991EC7C7FE00DEB178 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EEED981EC7C7FE00DEB178 /* IntroViewController.swift */; };
+		65F51CE91EE3784E006D47DB /* NormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F51CE21EE3784E006D47DB /* NormalCell.xib */; };
+		65F51CEA1EE3784E006D47DB /* TextfieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F51CE31EE3784E006D47DB /* TextfieldCell.xib */; };
+		65F51CEB1EE3784E006D47DB /* DatePickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F51CE41EE3784E006D47DB /* DatePickerCell.xib */; };
+		65F51CEC1EE3784E006D47DB /* SwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F51CE51EE3784E006D47DB /* SwitchCell.xib */; };
+		65F51CED1EE3784E006D47DB /* ValuePickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F51CE61EE3784E006D47DB /* ValuePickerCell.xib */; };
+		65F51CEE1EE3784E006D47DB /* SliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F51CE71EE3784E006D47DB /* SliderCell.xib */; };
 		65F885001ED63755009C3270 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F884FF1ED63755009C3270 /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,10 +62,18 @@
 		65525A331EBD170C00F0EBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		655D9EF01EBD452B002C6502 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		655D9EF21EBD454B002C6502 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		658581091EE0D81800F40319 /* AddWorkoutCellDescriptor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AddWorkoutCellDescriptor.plist; sourceTree = "<group>"; };
+		658AAE701EE7736A00F20FCD /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		65E5DEF11EC6435C00228455 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		65E5DEF31EC6492000228455 /* MyWorkoutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWorkoutsViewController.swift; sourceTree = "<group>"; };
 		65E5DEF51EC64BB200228455 /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
 		65EEED981EC7C7FE00DEB178 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		65F51CE21EE3784E006D47DB /* NormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalCell.xib; sourceTree = "<group>"; };
+		65F51CE31EE3784E006D47DB /* TextfieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextfieldCell.xib; sourceTree = "<group>"; };
+		65F51CE41EE3784E006D47DB /* DatePickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerCell.xib; sourceTree = "<group>"; };
+		65F51CE51EE3784E006D47DB /* SwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchCell.xib; sourceTree = "<group>"; };
+		65F51CE61EE3784E006D47DB /* ValuePickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ValuePickerCell.xib; sourceTree = "<group>"; };
+		65F51CE71EE3784E006D47DB /* SliderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderCell.xib; sourceTree = "<group>"; };
 		65F884FF1ED63755009C3270 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = ../NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +129,10 @@
 				65F884FF1ED63755009C3270 /* NetworkController.swift */,
 				65E5DEF11EC6435C00228455 /* MainMenuViewController.swift */,
 				65525A151EBD170C00F0EBFB /* Main.storyboard */,
+				658581091EE0D81800F40319 /* AddWorkoutCellDescriptor.plist */,
 				65EEED981EC7C7FE00DEB178 /* IntroViewController.swift */,
+				658AAE701EE7736A00F20FCD /* CustomCell.swift */,
+				65F51CE81EE3784E006D47DB /* Custom Cells */,
 				65E5DEF51EC64BB200228455 /* AddWorkoutViewController.swift */,
 				65E5DEF31EC6492000228455 /* MyWorkoutsViewController.swift */,
 				65525A181EBD170C00F0EBFB /* Assets.xcassets */,
@@ -141,6 +160,20 @@
 				65525A331EBD170C00F0EBFB /* Info.plist */,
 			);
 			path = Lift_TrackerUITests;
+			sourceTree = "<group>";
+		};
+		65F51CE81EE3784E006D47DB /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				65F51CE21EE3784E006D47DB /* NormalCell.xib */,
+				65F51CE31EE3784E006D47DB /* TextfieldCell.xib */,
+				65F51CE41EE3784E006D47DB /* DatePickerCell.xib */,
+				65F51CE51EE3784E006D47DB /* SwitchCell.xib */,
+				65F51CE61EE3784E006D47DB /* ValuePickerCell.xib */,
+				65F51CE71EE3784E006D47DB /* SliderCell.xib */,
+			);
+			name = "Custom Cells";
+			path = "../../../../Desktop/Starter Project/Expandable/Expandable";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,8 +285,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				65525A1C1EBD170C00F0EBFB /* LaunchScreen.storyboard in Resources */,
+				65F51CEC1EE3784E006D47DB /* SwitchCell.xib in Resources */,
+				65F51CEE1EE3784E006D47DB /* SliderCell.xib in Resources */,
+				65F51CEA1EE3784E006D47DB /* TextfieldCell.xib in Resources */,
+				6585810A1EE0D81800F40319 /* AddWorkoutCellDescriptor.plist in Resources */,
+				65F51CEB1EE3784E006D47DB /* DatePickerCell.xib in Resources */,
 				65525A191EBD170C00F0EBFB /* Assets.xcassets in Resources */,
+				65F51CED1EE3784E006D47DB /* ValuePickerCell.xib in Resources */,
 				65525A171EBD170C00F0EBFB /* Main.storyboard in Resources */,
+				65F51CE91EE3784E006D47DB /* NormalCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +322,7 @@
 				65E5DEF21EC6435C00228455 /* MainMenuViewController.swift in Sources */,
 				65525A121EBD170C00F0EBFB /* AppDelegate.swift in Sources */,
 				65EEED991EC7C7FE00DEB178 /* IntroViewController.swift in Sources */,
+				658AAE711EE7736A00F20FCD /* CustomCell.swift in Sources */,
 				65E5DEF61EC64BB200228455 /* AddWorkoutViewController.swift in Sources */,
 				655D9EF11EBD452B002C6502 /* Exercise.swift in Sources */,
 				655D9EF31EBD454B002C6502 /* Workout.swift in Sources */,

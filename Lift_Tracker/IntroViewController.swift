@@ -19,7 +19,7 @@ class IntroViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         let network = NetworkController()
-        network.performNetworkRequest(withURL: "https://wger.de/api/v2/exercise/?page=1")
+     //   network.performNetworkRequest(withURL: "https://wger.de/api/v2/exercise/?page=1")
         
                // Do any additional setup after loading the view.
     }

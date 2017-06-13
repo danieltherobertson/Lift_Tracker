@@ -36,9 +36,7 @@ class NetworkController: NSObject {
                         print("error trying to convert data to JSON")
                         return
                 }
-                // now we have the todo
-                // let's just print it to prove we can access it
-                print(woo)
+                let exercises = woo["results"]
             } catch  {
                 print("error trying to convert data to JSON")
                 return

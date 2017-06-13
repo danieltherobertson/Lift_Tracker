@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="77e-6k-CKR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="m8Z-gU-453">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -162,7 +162,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="fN8-DS-M70" kind="show" id="KFX-IV-WV5"/>
+                                            <segue destination="fN8-DS-M70" kind="show" identifier="menuToMyWorkoutsSegue" id="KFX-IV-WV5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-ru-2sd">
@@ -231,6 +231,10 @@
                         <outlet property="performanceButton" destination="GWg-Ho-D5R" id="vh6-1X-ow4"/>
                         <outlet property="settingsButton" destination="rbh-fJ-faP" id="K6F-BP-LWS"/>
                         <outlet property="workoutModeButton" destination="xFD-b5-5Om" id="zAg-6D-2LE"/>
+                        <outletCollection property="menuButtons" destination="xFD-b5-5Om" collectionClass="NSMutableArray" id="dOU-2J-58X"/>
+                        <outletCollection property="menuButtons" destination="GWg-Ho-D5R" collectionClass="NSMutableArray" id="hDw-0l-wEF"/>
+                        <outletCollection property="menuButtons" destination="GgE-Dr-MQg" collectionClass="NSMutableArray" id="wmw-Ob-pEs"/>
+                        <outletCollection property="menuButtons" destination="rbh-fJ-faP" collectionClass="NSMutableArray" id="bsh-PR-slU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -320,34 +324,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tAq-3b-hEK">
-                                <frame key="frameInset" minX="87" minY="304" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jfn-O3-WfQ">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="u6N-TF-aGB">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sT2-Hn-xrB">
+                                <color key="backgroundColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sT2-Hn-xrB" secondAttribute="trailing" id="5AG-kr-3CT"/>
+                            <constraint firstItem="sT2-Hn-xrB" firstAttribute="leading" secondItem="Rys-1C-SLf" secondAttribute="leading" id="IkW-Ic-oL6"/>
+                            <constraint firstItem="ucW-9g-hjA" firstAttribute="top" secondItem="sT2-Hn-xrB" secondAttribute="bottom" id="ZX2-P5-6lp"/>
+                            <constraint firstItem="sT2-Hn-xrB" firstAttribute="top" secondItem="O77-oj-b8W" secondAttribute="bottom" id="qCB-Eh-Ycy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="expandableTable" destination="sT2-Hn-xrB" id="Opf-nt-kSm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOl-XU-sjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3367" y="881"/>
+            <point key="canvasLocation" x="3365.5999999999999" y="880.20989505247383"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="X8g-LN-0tJ">

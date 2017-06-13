@@ -14,21 +14,43 @@ class MainMenuViewController: UIViewController {
     @IBOutlet weak var performanceButton: UIView!
     @IBOutlet weak var myWorkoutsButton: UIView!
     @IBOutlet weak var settingsButton: UIView!
+    @IBOutlet var menuButtons: [UIView]!
     
     var userName = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
+        prepareMenuButtons()
         
         print(userName)
         // Do any additional setup after loading the view.
     }
     
+    func prepareMenuButtons() {
+        var tagID = 0
+        for button in menuButtons {
+            button.tag = tagID
+            tagID += 1
+        }
+    }
+    
     @IBAction func mainMenuButtonPressed(_ sender: UITapGestureRecognizer) {
-        let button = sender.view
-        print(button)
-        button?.backgroundColor = UIColor.black
+        let button = sender.view?.tag
+        
+        switch  button! {
+        case 0:
+            print("Button 1")
+        case 1:
+            print("Button 2")
+        case 2:
+            performSegue(withIdentifier: "menuToMyWorkoutsSegue", sender: self)
+        case 3:
+            print("Button 4")
+    
+        default:
+            break
+        }
     }
 
     override func didReceiveMemoryWarning() {
