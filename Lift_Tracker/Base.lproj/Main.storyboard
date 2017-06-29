@@ -42,7 +42,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.98823529409999999" green="0.21176470589999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="1" green="0.16470588235294117" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
                                                         <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="xFD-b5-5Om" secondAttribute="height" multiplier="1:1" id="Dhu-Va-uiF"/>
@@ -66,7 +66,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.98823529409999999" green="0.21176470589999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="1" green="0.16470588235294117" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
                                                         <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstItem="m65-Dg-b9E" firstAttribute="centerX" secondItem="GgE-Dr-MQg" secondAttribute="centerX" id="5Ny-fV-seZ"/>
@@ -90,6 +90,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWg-Ho-D5R">
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERFORMANCE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cE-5m-Zyg">
+                                                                <color key="backgroundColor" red="1" green="0.16470588235294117" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="152" id="OtS-Sn-CMt"/>
                                                                 </constraints>
@@ -98,7 +99,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.98823529409999999" green="0.21176470589999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="1" green="0.1647058824" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstItem="6cE-5m-Zyg" firstAttribute="width" secondItem="GWg-Ho-D5R" secondAttribute="width" id="cWc-Ib-xW6"/>
@@ -122,7 +123,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.98823529409999999" green="0.21176470589999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="1" green="0.16470588235294117" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
                                                         <gestureRecognizers/>
                                                         <constraints>
                                                             <constraint firstItem="b6m-h1-fLD" firstAttribute="centerY" secondItem="rbh-fJ-faP" secondAttribute="centerY" id="m2h-zL-Nea"/>
@@ -189,7 +190,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.16862745098039217" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UUb-wZ-OoM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="0jb-vq-EPf"/>
                             <constraint firstAttribute="trailing" secondItem="SOq-yW-c8i" secondAttribute="trailing" constant="20" id="5nu-lj-RuH"/>
@@ -284,7 +285,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="workoutCell" id="Siz-J3-BRI">
-                                        <rect key="frame" x="76.5" y="0.0" width="202" height="43"/>
+                                        <rect key="frame" x="77" y="0.0" width="202" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="202" height="43"/>
@@ -312,10 +313,10 @@
             </objects>
             <point key="canvasLocation" x="2540" y="881.10944527736137"/>
         </scene>
-        <!--Add Workout View Controller-->
+        <!--Create Workout View Controller-->
         <scene sceneID="dBk-qJ-iIv">
             <objects>
-                <viewController id="m8Z-gU-453" customClass="AddWorkoutViewController" customModule="Lift_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="m8Z-gU-453" customClass="CreateWorkoutViewController" customModule="Lift_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="O77-oj-b8W"/>
                         <viewControllerLayoutGuide type="bottom" id="ucW-9g-hjA"/>
@@ -324,20 +325,116 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sT2-Hn-xrB">
-                                <color key="backgroundColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sT2-Hn-xrB">
+                                <color key="backgroundColor" red="0.066666666666666666" green="0.082352941176470587" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="textFieldCell" rowHeight="61" id="KZf-Nb-Rnl" customClass="CustomWorkoutCell" customModule="Lift_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="61"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KZf-Nb-Rnl" id="aAo-IN-Zhc">
+                                            <frame key="frameInset" width="375" height="61"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Workout Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lZw-jh-bJm">
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lZw-jh-bJm" firstAttribute="top" secondItem="aAo-IN-Zhc" secondAttribute="top" constant="8" id="GtX-bi-em6"/>
+                                                <constraint firstAttribute="bottom" secondItem="lZw-jh-bJm" secondAttribute="bottom" constant="8" id="pdX-Dk-1hd"/>
+                                                <constraint firstItem="lZw-jh-bJm" firstAttribute="leading" secondItem="aAo-IN-Zhc" secondAttribute="leading" constant="8" id="tdT-Ot-0op"/>
+                                                <constraint firstAttribute="trailing" secondItem="lZw-jh-bJm" secondAttribute="trailing" constant="8" id="yPQ-cH-35z"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.1647058824" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="cellTextField" destination="lZw-jh-bJm" id="s3Q-95-buX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="switchCell" rowHeight="48" id="iGg-95-IVW" customClass="CustomWorkoutCell" customModule="Lift_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="153" width="375" height="48"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iGg-95-IVW" id="A15-ck-s0O">
+                                            <frame key="frameInset" width="375" height="48"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PHU-RO-d7U">
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equal rep count across all sets?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFW-Bu-oBu">
+                                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ess-3v-jh4">
+                                                            <color key="onTintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="thumbTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </switch>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="ess-3v-jh4" firstAttribute="centerY" secondItem="iFW-Bu-oBu" secondAttribute="centerY" id="s5q-9Z-dYh"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="PHU-RO-d7U" secondAttribute="trailing" constant="8" id="Cdy-yR-hdo"/>
+                                                <constraint firstItem="PHU-RO-d7U" firstAttribute="leading" secondItem="A15-ck-s0O" secondAttribute="leading" constant="8" id="VCu-Po-j6g"/>
+                                                <constraint firstItem="PHU-RO-d7U" firstAttribute="centerY" secondItem="A15-ck-s0O" secondAttribute="centerY" id="iRD-QO-lVJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.1647058824" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="cellSwitch" destination="ess-3v-jh4" id="PP9-QY-Oq8"/>
+                                            <outlet property="switchCellLabel" destination="iFW-Bu-oBu" id="pmg-nW-hWc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="buttonCell" rowHeight="106" id="fUO-1V-XJ5" customClass="CustomWorkoutCell" customModule="Lift_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="201" width="375" height="106"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fUO-1V-XJ5" id="jOg-X5-FrF">
+                                            <frame key="frameInset" width="375" height="106"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKa-QE-JJo">
+                                                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                    <state key="normal" title="Add Exercise">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="zKa-QE-JJo" secondAttribute="bottom" constant="8" id="5Sl-Nt-40f"/>
+                                                <constraint firstItem="zKa-QE-JJo" firstAttribute="leading" secondItem="jOg-X5-FrF" secondAttribute="leading" constant="8" id="CYz-4B-7jK"/>
+                                                <constraint firstAttribute="trailing" secondItem="zKa-QE-JJo" secondAttribute="trailing" constant="8" id="Is2-iH-hYr"/>
+                                                <constraint firstItem="zKa-QE-JJo" firstAttribute="top" secondItem="jOg-X5-FrF" secondAttribute="top" constant="8" id="v8G-44-Hdd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.1647058824" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="cellButton" destination="zKa-QE-JJo" id="NZD-rU-KEx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="sT2-Hn-xrB" secondAttribute="trailing" id="5AG-kr-3CT"/>
                             <constraint firstItem="sT2-Hn-xrB" firstAttribute="leading" secondItem="Rys-1C-SLf" secondAttribute="leading" id="IkW-Ic-oL6"/>
+                            <constraint firstItem="sT2-Hn-xrB" firstAttribute="top" secondItem="O77-oj-b8W" secondAttribute="bottom" id="OvG-WA-idR"/>
+                            <constraint firstItem="sT2-Hn-xrB" firstAttribute="leading" secondItem="Rys-1C-SLf" secondAttribute="leading" id="XWf-5j-Pj6"/>
                             <constraint firstItem="ucW-9g-hjA" firstAttribute="top" secondItem="sT2-Hn-xrB" secondAttribute="bottom" id="ZX2-P5-6lp"/>
+                            <constraint firstAttribute="trailing" secondItem="sT2-Hn-xrB" secondAttribute="trailing" id="aRp-0V-e2p"/>
+                            <constraint firstItem="ucW-9g-hjA" firstAttribute="top" secondItem="sT2-Hn-xrB" secondAttribute="bottom" id="hIC-uU-ABJ"/>
                             <constraint firstItem="sT2-Hn-xrB" firstAttribute="top" secondItem="O77-oj-b8W" secondAttribute="bottom" id="qCB-Eh-Ycy"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="expandableTable" destination="sT2-Hn-xrB" id="Opf-nt-kSm"/>
+                        <outlet property="workoutCreationTableView" destination="sT2-Hn-xrB" id="fqZ-R6-Tc0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOl-XU-sjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -418,7 +515,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="230" text="Welcome to Weight Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1k-BR-NVM">
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="25"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="0.1647058824" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To get started, enter your name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihe-Le-MCT">
@@ -444,7 +541,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="93r-EJ-ZKu" firstAttribute="leading" secondItem="4kb-n1-KS0" secondAttribute="leading" constant="20" id="Xzb-PN-x8C"/>
                             <constraint firstAttribute="trailing" secondItem="93r-EJ-ZKu" secondAttribute="trailing" constant="20" id="YHT-lX-2pG"/>
@@ -471,11 +568,16 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fN8-DS-M70" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nhf-av-rJD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="RzU-rB-0J8">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="mIe-Vg-g6S" kind="relationship" relationship="rootViewController" id="QZT-Ld-GVL"/>
                     </connections>

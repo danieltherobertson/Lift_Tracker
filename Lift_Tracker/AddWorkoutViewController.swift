@@ -5,10 +5,10 @@
 //  Created by Daniel Robertson on 12/05/2017.
 //  Copyright © 2017 Daniel Robertson. All rights reserved.
 //
-
+/*
 import UIKit
 
-class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CustomCellDelegate {
 
     @IBOutlet weak var expandableTable: UITableView!
     var cellDescriptors: NSMutableArray! //Arrray from plist, contains descriptors for each cell, array of arrays of dictionaries
@@ -35,11 +35,11 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func loadCellDescriptors() {
-        if let path = Bundle.main.path(forResource: "", ofType: "plist") {
+        if let path = Bundle.main.path(forResource: "AddWorkoutCellDescriptors", ofType: "plist") {
             cellDescriptors = NSMutableArray(contentsOfFile: path)
             getIndicesOfVisibleRows()
             expandableTable.reloadData()
-        //    print(cellDescriptors)
+            print(cellDescriptors)
         }
     }
 
@@ -84,6 +84,31 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
         
     }
     
+    func maritalStatusSwitchChangedState(isOn: Bool) {
+        let maritalSwitchCellSection = 1
+        let maritalSwitchCellRow = 2
+        
+        var mutableDescriptors = cellDescriptors[maritalSwitchCellSection] as! [[String: Any]]
+        
+        if isOn {
+            mutableDescriptors[maritalSwitchCellRow + 1].updateValue(true, forKey: "isVisible")
+            mutableDescriptors[maritalSwitchCellRow].updateValue(true, forKey: "isExpanded")
+            mutableDescriptors[maritalSwitchCellRow].updateValue("Yes", forKey: "value")
+
+        } else {
+            
+        }
+
+      
+        
+        
+        
+        //LOGIC TO INSERT NEW ROWS GOES HERE
+     //   mutableDescriptors[maritalSwitchCellRow + 1].updateValue(valueToDisplay, forKey: "primaryTitle")
+        cellDescriptors[maritalSwitchCellSection] = mutableDescriptors
+       // expandableTable.reloadData()
+    }
+    
     // MARK: UITableView Delegate and Datasource Functions
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -103,13 +128,10 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
-            return "Personal"
-            
-        case 1:
-            return "Preferences"
+            return "Workout Setup"
             
         default:
-            return "Work Experience"
+            return "Create Exercise"
         }
     }
 
@@ -157,7 +179,7 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
             let value = currentCellDescriptor["value"] as! String
             cell.slExperienceLevel.value = (value as NSString).floatValue
         }
-        
+        cell.delegate = self
         return cell
     }
     
@@ -217,3 +239,4 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
     */
 
 }
+ */

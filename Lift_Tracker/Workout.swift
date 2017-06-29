@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct  Routine {
+struct Routine {
     var name: String
     var exercises: [Exercise]
     var performancesPerWeek: Int

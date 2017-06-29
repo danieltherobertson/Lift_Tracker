@@ -5,17 +5,17 @@
 //  Created by Gabriel Theodoropoulos on 28/10/15.
 //  Copyright © 2015 Appcoda. All rights reserved.
 //
-
+/*
 import UIKit
 
 protocol CustomCellDelegate {
-    func dateWasSelected(selectedDateString: String)
+  //  func dateWasSelected(selectedDateString: String)
     
     func maritalStatusSwitchChangedState(isOn: Bool)
     
-    func textfieldTextWasChanged(newText: String, parentCell: CustomCell)
+    //func textfieldTextWasChanged(newText: String, parentCell: CustomCell)
     
-    func sliderDidChangeValue(newSliderValue: String)
+   // func sliderDidChangeValue(newSliderValue: String)
 }
 
 class CustomCell: UITableViewCell, UITextFieldDelegate {
@@ -31,6 +31,7 @@ class CustomCell: UITableViewCell, UITextFieldDelegate {
     @IBOutlet weak var swMaritalStatus: UISwitch!
     
     @IBOutlet weak var slExperienceLevel: UISlider!
+    @IBOutlet weak var addExerciseButton: UIButton!
     
     
     // MARK: Constants
@@ -88,38 +89,40 @@ class CustomCell: UITableViewCell, UITextFieldDelegate {
     
     // MARK: IBAction Functions
     
-    @IBAction func setDate(sender: AnyObject) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = DateFormatter.Style.long
-        let dateString = dateFormatter.string(from: datePicker.date)
-        
-        if delegate != nil {
-            delegate.dateWasSelected(selectedDateString: dateString)
-        }
-    }
+//    @IBAction func setDate(sender: AnyObject) {
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateStyle = DateFormatter.Style.long
+//        let dateString = dateFormatter.string(from: datePicker.date)
+//        
+//        if delegate != nil {
+//            delegate.dateWasSelected(selectedDateString: dateString)
+//        }
+//    }
     
-    @IBAction func handleSwitchStateChange(sender: AnyObject) {
+   
+    @IBAction func handleSwitchStateChange(_ sender: UISwitch) {
         if delegate != nil {
             delegate.maritalStatusSwitchChangedState(isOn: swMaritalStatus.isOn)
         }
     }
     
     
-    @IBAction func handleSliderValueChange(sender: AnyObject) {
-        if delegate != nil {
-            delegate.sliderDidChangeValue(newSliderValue: "\(Int(slExperienceLevel.value))")
-        }
-    }
-    
+//    @IBAction func handleSliderValueChange(sender: AnyObject) {
+//        if delegate != nil {
+//            delegate.sliderDidChangeValue(newSliderValue: "\(Int(slExperienceLevel.value))")
+//        }
+//    }
+//    
     
     // MARK: UITextFieldDelegate Function
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        if delegate != nil {
-            delegate.textfieldTextWasChanged(newText: textField.text!, parentCell: self)
-        }
-        
-        return true
-    }
+//    func textFieldShouldReturn(textField: UITextField) -> Bool {
+//        if delegate != nil {
+//            delegate.textfieldTextWasChanged(newText: textField.text!, parentCell: self)
+//        }
+//        
+//        return true
+//    }
     
 }
+*/
